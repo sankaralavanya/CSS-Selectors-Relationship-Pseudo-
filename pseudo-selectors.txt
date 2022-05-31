@@ -1,0 +1,56 @@
+Pseudo Selectors
+ 	Allows developer to style an element as per the state inside their DOM Structure.
+ 	Elements state can not be targeted with any other selectors.
+Syntax:
+:first-child{
+}
+:last-child{
+}
+:nth-child(2n){
+}
+:nth-child(2n+1){
+}
+:nth-child(){
+}
+
+Pseudo-class
+A pseudo-class is used to define a special state of an element.
+For example, it can be used to:
+	Style an element when a user mouses over it
+	Style visited and unvisited links differently
+	Style an element when it gets focus
+Syntax:
+	selector:pseudo-class {
+  		property: value;
+}
+Ex: a:link a:hover a:visited a:active   div:hover
+
+Pseudo-elements
+A CSS pseudo-element is used to style specified parts of an element.
+ 	Style the first letter, or line, of an element
+ 	Insert content before, or after, the content of an element
+Syntax:	selector::pseudo-element {
+  			property: value;
+		}
+
+	p::after	Insert something after the content of each <p> element
+	::after{
+	}
+	p::before	Insert something before the content of each <p> element
+	::before{
+	}
+	p::first-letter	Selects the first letter of each <p> element
+	::first-letter{
+	}
+	p::first-line	Selects the first line of each <p> element.
+	::first-line{
+	}
+	::markerSelects the markers of list items
+	p::selection	Selects the portion of an element that is selected by a user
+		::selection{
+		}
+
+ 
+
+   
+
