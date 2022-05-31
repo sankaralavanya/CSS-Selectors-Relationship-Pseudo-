@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Pseudo Selectors</title>
+		<style>
+			ol li:first-child{color:red;}
+			ol li:last-child{color:green;}
+			ul li:nth-child(2n){font-style:italic;}
+			ul li:nth-child(2n+1){color:violet;}
+			ol li:nth-child(4){border:2px solid red;}
+			
+			/*pseudo element selector*/
+			dd::first-line{
+				color:orange;
+			}
+			dd::first-letter{
+				font-size:20px;
+			}
+			dt::before{
+				content:url(10000coders-logo.png);
+			}
+			dt::after{
+				content:"**";
+			}
+			p::selection{
+				background-color:yellow;
+			}
+			ol{
+				background-color:lightyellow;
+			}
+			
+			/*pseudo class selector*/
+			a:hover{
+				color:blue;
+			}
+			a:active{
+				color:green;
+			}
+			a:visited{
+				color:purple;
+			}
+			.button:hover{
+				background-color:green;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<ol>
+			<li>c</li>
+			<li>Java</li>
+			<li>HTML</li>
+				<ul>
+					<li>HTML 1.0</li>
+					<li>HTML 2.0</li>
+					<li>HTML 3.0</li>
+					<li>HTML 4.0</li>
+					<li>HTML 5.0</li>
+				</ul>
+			<li>CSS</li>
+				<ul>
+					<li>CSS 1.0</li>					
+					<li>CSS 2.0</li>
+					<li>CSS 3.0</li>
+				</ul>
+			<li>JS</li>
+		</ol><br/><br/>
+		<a href="https://www.10000coders.co/" target="_blank">10000coders</a>
+		<a href="https://github.com/" target="_blank">GitHub</a>
+		<a href="https://www.w3schools.com/" target="_blank">W3schools</a>
+		<input class="button" type="button" name="button" value="click here"/>
+		<p>HTML CSS JS (on selection background coloy:yellow)</p><br/><br/>
+		<dl>
+			<dt>HTML</dt>
+			<dd>The HyperText Markup Language or HTML is the standard markup language for documents designed to be 
+			displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets and scripting 
+			languages such as JavaScript.</dd><br/>
+			
+			<dt>CSS</dt>
+			<dd>Cascading Style Sheets is a style sheet language used for describing the presentation of a document written
+			in a markup language such as HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and 
+			JavaScript</dd><br/>
+			
+			<dt>JS</dt>
+			<dd>JavaScript, often abbreviated JS, is a programming language that is one of the core technologies of the 
+			World Wide Web, alongside HTML and CSS. Over 97% of websites use JavaScript on the client side for web page behavior,
+			often incorporating third-party libraries.</dd><br/>
+		</dl>
+		
+	</body>
+</html>
