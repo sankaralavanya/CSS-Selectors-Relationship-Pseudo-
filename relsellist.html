@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Relationship Selectors</title>
+		<style>
+			ol>li{
+				background-color:lightgrey;
+				margin-right:20px;
+			}
+			ul li{
+				color:red;
+			}
+			.bgclr{
+				background-color:lightyellow;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Lists</h1>
+		<h3>ul ol</h3>
+		<ul class="bgclr">
+			<li>Tea</li>
+				<ol type="circle">
+					<li>Black Tea</li>
+					<li>Green Tea</li>
+				</ol>
+			<li>Cofee</li>
+				<ol type="circle">
+					<li>Hot Coffee</li>
+					<li>Cold Cofee</li>
+				</ol>
+			<li>Milk</li>
+		</ul>
+		<h3>ol ul</h3>
+		<ol class="bgclr">
+			<li>Tea</li>
+				<ul type="a">
+					<li>Black Tea</li>
+					<li>Green Tea</li>
+				</ul>
+			<li>Cofee</li>
+				<ul type="a">
+					<li>Hot Coffee</li>
+					<li>Cold Cofee</li>
+				</ul>
+			<li>Milk</li>
+		</ol>
+		
+	</body>
+</html>

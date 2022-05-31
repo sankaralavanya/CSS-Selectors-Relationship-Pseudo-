@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>relationshipselectors-div</title>
+		<style>
+			/*Direct Children Selectors*/
+			section>header,footer{
+				height:100px;
+			}
+			section>main{
+				height:400px;
+			}
+			
+			/*Descedant selectors*/
+			section header,section main{
+				display:flex;
+			}
+			header a,main #img,main #li,main #empty{
+				flex:1;
+			}
+			main img{
+				width:100%;
+				height:100%;
+			}
+			ul li{
+				color:green;
+			}
+						
+			/*tag selector*/
+			section{
+				border:2px solid red;
+				background-color:lightblue;
+			}
+			h3{
+				color:purple;
+			}
+		</style>
+	</head>
+	<body>
+		<section>
+			<header>
+				<a href="https://www.10000coders.co/" target="_blank">10000coders</a>
+				<a href="https://github.com/" target="_blank">GitHub</a>
+				<a href="https://www.w3schools.com/" target="_blank">W3schools</a>
+			</header>
+			<main>
+				<div id="img">
+					<img src="../images/lap.jfif" alt="No Image Found"/>
+				</div>
+				<div id="empty">
+				</div>
+				<div id="li">
+					<h3>courses</h3>
+					<ul>
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>Bootstrap</li>
+						<li>JQuery</li>
+					<ul>
+				</div>
+			</main>
+			<footer>
+				<a href="#">Contact Us</a>
+			</footer>
+		</section>
+	</body>
+</html>
